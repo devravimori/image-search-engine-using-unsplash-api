@@ -1,0 +1,25 @@
+.hero{
+    background-image: url('/src/image/search\ background2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    background: url('/src/image/cross.svg') no-repeat 50% 50%;
+    background-size: contain;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  input[type="search"]:focus::-webkit-search-cancel-button {
+    opacity: .4;
+    pointer-events: all;
+  }
+  
+  input[type="search"].dark::-webkit-search-cancel-button {
+    filter: invert(1);
+  }
